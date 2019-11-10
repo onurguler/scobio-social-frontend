@@ -1,0 +1,42 @@
+// Override default variables before the import
+//$body-bg: #000;
+// Import Bootstrap and its default variables
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+// Navbar styling
+.navbar {
+  padding: 4px 20px;
+
+  .input-group {
+    .form-control:focus {
+      border-color: $secondary;
+      box-shadow: none;
+
+      & + .input-group-append {
+        background: $secondary;
+
+        .btn {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .auth-buttons {
+    .btn {
+      width: 100px;
+    }
+  }
+
+  .dropdown-item {
+    .icon-left {
+      color: $secondary;
+      font-size: 20px;
+    }
+
+    .icon-right {
+      color: $secondary;
+      font-size: 10px;
+    }
+  }
+}

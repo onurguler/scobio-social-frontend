@@ -1,0 +1,13 @@
+{
+  "name": "scobio-social",
+  "version": "1.0.0",
+  "description": "Scobio Social Platform",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm start --prefix client"
+  },
+  "author": "Scobio",
+  "license": "ISC",
+  "dependencies": {}
+}
