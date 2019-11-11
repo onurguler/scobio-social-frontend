@@ -30,9 +30,11 @@ const Login = () => {
             src={login_img}
           />
         </Col>
+
         <Col lg={8} className="justify-content-center vertical-center">
           <Form className="login-form text-center" onSubmit={e => onSubmit(e)}>
             <h3 className="mb-5">Login to continue</h3>
+
             <Form.Group controlId="formBasicEmail">
               <Form.Control
                 value={email}
@@ -52,6 +54,7 @@ const Login = () => {
                 placeholder="Password"
               />
             </Form.Group>
+
             {/* <Form.Group className="text-left" controlId="formBasicCheckbox">
               <Form.Check
                 name="rememberMe"
@@ -75,6 +78,7 @@ const Login = () => {
             <Button id="facebook" variant="default">
               <FontAwesomeIcon icon={faFacebook} size="2x" />
             </Button>
+
             <Button id="google" variant="default">
               <FontAwesomeIcon icon={faGooglePlus} size="2x" />
             </Button>
