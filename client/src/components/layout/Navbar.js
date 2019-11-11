@@ -22,7 +22,9 @@ const NavBar = ({ isAuthenticated }) => {
       <Container fluid={false}>
         <FontAwesomeIcon className="mr-2" icon={faSellcast} size={'2x'} />
 
-        <Navbar.Brand href="#home">Scobio</Navbar.Brand>
+        <Navbar.Brand className="font-weight-bold" href="#home">
+          Scobio
+        </Navbar.Brand>
 
         <SearchInput />
 

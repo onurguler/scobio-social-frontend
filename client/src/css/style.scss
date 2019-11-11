@@ -3,6 +3,45 @@
 // Import Bootstrap and its default variables
 @import '../../node_modules/bootstrap/scss/bootstrap';
 
+@import url('https://fonts.googleapis.com/css?family=Catamaran|Maven+Pro|Montserrat|Oxygen|Poppins|Quicksand|Raleway|Work+Sans&display=swap');
+
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+// utilities
+.font-catamaran {
+  font-family: 'Catamaran', sans-serif;
+}
+
+.font-mavenpro {
+  font-family: 'Maven Pro', sans-serif;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-oxygen {
+  font-family: 'Oxygen', sans-serif;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-quicksand {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.font-raleway {
+  font-family: 'Raleway', sans-serif;
+}
+
+.font-worksans {
+  font-family: 'Work Sans', sans-serif;
+}
+
 // Navbar styling
 .navbar {
   padding: 4px 20px;
@@ -38,5 +77,28 @@
       color: $secondary;
       font-size: 10px;
     }
+  }
+}
+
+.vertical-center {
+  min-height: 100%; /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.login-form {
+  width: 40%;
+  .form-control,
+  .btn {
+    height: 50px;
+  }
+  #facebook {
+    color: #3b5997;
+  }
+
+  #google {
+    color: #dd4b39;
   }
 }
