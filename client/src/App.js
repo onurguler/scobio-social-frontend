@@ -1,14 +1,21 @@
 import React, { Fragment } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './components/home/Home';
 import Navbar from './components/layout/Navbar';
 import Login from './components/auth/Login';
 import Signup from './components/auth/Signup';
 
 const App = () => {
   return (
-    <Fragment>
-      <Navbar />
-      <Signup />
-    </Fragment>
+    <Router>
+      <Fragment>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/register" component={Signup} />
+        </Switch>
+      </Fragment>
+    </Router>
   );
 };
 

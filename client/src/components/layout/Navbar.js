@@ -15,6 +15,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { faQuestionCircle } from '@fortawesome/free-regular-svg-icons';
 import SearchInput from './SearchInput';
+import { Link } from 'react-router-dom';
 
 const NavBar = ({ isAuthenticated }) => {
   return (
@@ -29,12 +30,17 @@ const NavBar = ({ isAuthenticated }) => {
         <SearchInput />
 
         <ButtonToolbar className="auth-buttons d-none d-md-block">
-          <Button className="mr-3" variant="outline-primary" size="sm">
-            LOG IN
-          </Button>
-          <Button className="mr-3" variant="primary" size="sm">
-            SIGN UP
-          </Button>
+          <Link to="/login">
+            <Button className="mr-3" variant="outline-primary" size="sm">
+              LOG IN
+            </Button>
+          </Link>
+
+          <Link to="/register">
+            <Button className="mr-3" variant="primary" size="sm">
+              SIGN UP
+            </Button>
+          </Link>
         </ButtonToolbar>
 
         <Dropdown>
