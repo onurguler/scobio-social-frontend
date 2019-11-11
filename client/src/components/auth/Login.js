@@ -1,10 +1,26 @@
-import React, { Fragment } from 'react';
-import { Row, Col, Image, Form, Button } from 'react-bootstrap';
+import React, { Fragment, useState } from 'react';
+import { Row, Col, Image, Form, Button, FormGroup } from 'react-bootstrap';
 import { faFacebook, faGooglePlus } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import login_img from '../../assets/img/login.jpg';
 
 const Login = () => {
+  const [formData, setFormData] = useState({
+    email: '',
+    password: ''
+  });
+
+  const { email, password } = formData;
+
+  const onChange = e =>
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+
+  const onSubmit = e => {
+    e.preventDefault();
+
+    console.log(email, password);
+  };
+
   return (
     <Fragment>
       <Row>
@@ -15,22 +31,40 @@ const Login = () => {
           />
         </Col>
         <Col lg={8} className="justify-content-center vertical-center">
-          <Form className="login-form text-center">
+          <Form className="login-form text-center" onSubmit={e => onSubmit(e)}>
             <h3 className="mb-5">Login to continue</h3>
             <Form.Group controlId="formBasicEmail">
-              <Form.Control type="email" placeholder="Enter email" />
+              <Form.Control
+                value={email}
+                onChange={e => onChange(e)}
+                name="email"
+                type="email"
+                placeholder="Enter email"
+              />
             </Form.Group>
 
             <Form.Group controlId="formBasicPassword">
-              <Form.Control type="password" placeholder="Password" />
+              <Form.Control
+                value={password}
+                onChange={e => onChange(e)}
+                name="password"
+                type="password"
+                placeholder="Password"
+              />
             </Form.Group>
-            <Form.Group className="text-left" controlId="formBasicCheckbox">
-              <Form.Check type="checkbox" label="Remember me" />
-            </Form.Group>
+            {/* <Form.Group className="text-left" controlId="formBasicCheckbox">
+              <Form.Check
+                name="rememberMe"
+                type="checkbox"
+                label="Remember me"
+              />
+            </Form.Group> */}
 
-            <a className="d-block mb-3" href="#!">
-              Forgot Password?
-            </a>
+            <FormGroup>
+              <a className="d-block mb-3" href="#!">
+                Forgot Password?
+              </a>
+            </FormGroup>
 
             <Button className="w-50" variant="primary" type="submit">
               LOG IN
