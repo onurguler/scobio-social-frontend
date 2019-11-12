@@ -25,9 +25,7 @@ const Trending = () => {
   return (
     <Fragment>
       <p className="font-weight-bold" style={{ fontSize: '14px' }}>
-        Trending on Scobio today - Günün en çok etkileşim alan içerikler en çok
-        etkileşim alan sıraya göre sıralanarak belli bir sayıda gösterilecek 20
-        30 tane
+        Trending on Scobio today
       </p>
       <Carousel
         /*

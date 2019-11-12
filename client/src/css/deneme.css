@@ -10,7 +10,7 @@
   margin: 0px !important;
 }
 .cardbox {
-  border-radius: 4px;
+  border-radius: 3px;
   margin-bottom: 20px;
   padding: 0px !important;
 }
@@ -107,11 +107,8 @@
   position: relative;
   display: block;
 }
-
 /* .cardbox .cardbox-item img {
-  width: 100%;
 } */
-
 .img-responsive {
   display: block;
   max-width: 100%;
@@ -123,10 +120,8 @@
 }
 
 .cardbox-content {
-  margin: 10px 0px 0px 15px !important;
   padding: 10px !important;
 }
-
 /* ------------------------------- */
 /* Cardbox Base
 ---------------------------------- */

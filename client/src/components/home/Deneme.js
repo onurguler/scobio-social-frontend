@@ -1,7 +1,5 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEllipsisH } from '@fortawesome/free-solid-svg-icons';
 import '../../css/postCard.css';
 
 const PostCard = () => {
@@ -14,7 +12,7 @@ const PostCard = () => {
             type="button"
             data-toggle="dropdown"
             aria-expanded="false">
-            <FontAwesomeIcon icon={faEllipsisH} />
+            <em class="fa fa-ellipsis-h"></em>
           </button>
           <div
             class="dropdown-menu dropdown-scale dropdown-menu-right"
@@ -69,14 +67,6 @@ const PostCard = () => {
           src="https://images.unsplash.com/photo-1562887194-f0bca025726c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
           alt="Image"
         />
-      </div>
-      <div className="cardbox-content">
-        <h4>Deneme</h4>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo
-          doloremque dicta et qui in cupiditate dolor maxime veritatis facere
-          esse!
-        </p>
       </div>
       <div class="cardbox-base">
         <ul class="float-right">

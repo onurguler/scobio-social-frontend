@@ -13,8 +13,8 @@ const Home = () => {
 
         <Row className="mt-3">
           <Col lg={8}>
-            karışık kategorilerden popüler içeriklerin listelenmiş hali yer
-            alacak tıklanınca içeriğin görüntülendiği sayfa açılacak
+            <PostCard />
+            <PostCard />
             <PostCard />
           </Col>
           <Col lg={4}>
