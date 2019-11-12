@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './components/home/Home';
-import Navbar from './components/layout/Navbar';
 import Login from './components/auth/Login';
 import Signup from './components/auth/Signup';
 
