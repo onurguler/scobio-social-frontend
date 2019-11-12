@@ -46,8 +46,13 @@ git add .
 git commit -m "added post component"
 git push -u origin postcomponent
 
+Branch birleştirme:
 git checkout homepage
-git pull -> biri değişiklik yapmışsa onları çekelim
-git merge postcomponent
+git fetch origin homepage -> biri değişiklik yapmışsa onları çekelim
+git merge postcomponent -> kendi değişikliklerimizle birleştirelim
 git push -u origin postcomponent
 ```
+
+Proje bu durumda çalışır haldeyse delevop branchi ile birleştirilmeli.
+
+Projenin son çalışan hali ise master ana branchinde yer almalı kesin çalıştığından emin olmadan master branchine commit yapılmamalı.
