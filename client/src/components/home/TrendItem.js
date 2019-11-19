@@ -3,7 +3,7 @@ import { Card } from 'react-bootstrap';
 
 const TrendItem = () => {
   return (
-    <Card className="trend-item bg-dark text-white mr-3 h-100">
+    <Card className="trend-item bg-dark text-white h-100 mr-sm-0 mr-md-4">
       <div className="overlay">
         <Card.Img
           className="h-100"

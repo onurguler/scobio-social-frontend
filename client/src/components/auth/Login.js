@@ -26,7 +26,7 @@ const Login = () => {
       <Row>
         <Col lg={4}>
           <Image
-            className="img-fluid vh-100 d-none d-lg-block"
+            className="img-fluid vh-100 d-none d-lg-block fit-image"
             src={login_img}
           />
         </Col>
