@@ -1,28 +1,26 @@
 import React from 'react';
 
-const PostCard = () => {
+const PostCard = ({ data }) => {
   return (
-    <div class="card mb-3 home-post-card">
+    <div class="card mb-3 home-post-card mb-4">
       <div class="row no-gutters">
         <div class="col-md-4">
           <img
-            src="https://images.unsplash.com/photo-1562887194-f0bca025726c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
-            class="card-img h-100 fit-image"
+            src={data.image}
+            class="card-img fit-image h-full"
+            width="175"
+            height="175"
             alt="..."
           />
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            <h5 class="card-title truncate-2-lines">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, qui.
-            </h5>
+            <h5 class="card-title truncate-2-lines">{data.title}</h5>
             <p class="card-text font-smaller truncate-2-lines">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime
-              inventore eveniet magni ipsum iste suscipit quo deleniti. Vel
-              adipisci facilis ducimus aliquam consequatur accusantium
+              {data.subtitle}
             </p>
             <p class="card-text">
-              <small class="text-muted">Last updated 3 mins ago</small>
+              <small class="text-muted">Last updated {data.date}</small>
             </p>
           </div>
         </div>

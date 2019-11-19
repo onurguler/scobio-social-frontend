@@ -1,8 +1,12 @@
 import React, { Fragment } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+
 import Navbar from '../layout/Navbar';
 import Trending from './Trending';
-import PostCard from './PostCard';
+import PopularCategories from './PopularCategories';
+
+// static data
+import { popularCategories } from '../static_data/popularCategories';
 
 const Home = () => {
   return (
@@ -13,9 +17,7 @@ const Home = () => {
 
         <Row className="mt-3">
           <Col lg={8}>
-            <PostCard />
-            <PostCard />
-            <PostCard />
+            <PopularCategories data={popularCategories} />
           </Col>
           <Col lg={4}>
             kategoriler, reklamlar yer alacak. kategoriye tıklanınca o
