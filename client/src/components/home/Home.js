@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Navbar from '../layout/Navbar';
 import Trending from './Trending';
 import PopularCategories from './PopularCategories';
+import CategoriesList from './CategoriesList';
 
 // static data
 import { popularCategories } from '../static_data/popularCategories';
@@ -19,9 +20,8 @@ const Home = () => {
           <Col lg={8}>
             <PopularCategories data={popularCategories} />
           </Col>
-          <Col lg={4}>
-            kategoriler, reklamlar yer alacak. kategoriye tıklanınca o
-            kategoriye ait içeriklerin listelendiği sayfa açılacak
+          <Col lg={4} className="p pl-5">
+            <CategoriesList />
           </Col>
         </Row>
       </Container>
