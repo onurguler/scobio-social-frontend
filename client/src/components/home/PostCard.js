@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const PostCard = ({ data }) => {
   return (
@@ -19,9 +20,14 @@ const PostCard = ({ data }) => {
             <p class="card-text font-smaller truncate-2-lines">
               {data.subtitle}
             </p>
-            <p class="card-text">
+            <div class="card-text">
+              <div>
+                <Link className="text-decoration-none text-dark" to="/profile">
+                  {data.author}
+                </Link>
+              </div>
               <small class="text-muted">Last updated {data.date}</small>
-            </p>
+            </div>
           </div>
         </div>
       </div>

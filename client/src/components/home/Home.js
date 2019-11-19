@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
-import Navbar from '../layout/Navbar';
 import Trending from './Trending';
 import PopularCategories from './PopularCategories';
 import CategoriesList from './CategoriesList';
@@ -12,7 +11,6 @@ import { popularCategories } from '../static_data/popularCategories';
 const Home = () => {
   return (
     <Fragment>
-      <Navbar />
       <Container className="pt-3">
         <Trending />
 
