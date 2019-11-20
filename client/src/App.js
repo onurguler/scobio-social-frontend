@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './components/home/Home';
 import Login from './components/auth/Login';
@@ -9,7 +9,7 @@ import Navbar from './components/layout/Navbar';
 const App = () => {
   return (
     <Router>
-      <Fragment>
+      <div className="font-sans antialiased bg-gray-100 text-gray-900">
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
@@ -17,7 +17,7 @@ const App = () => {
           <Route exact path="/register" component={Signup} />
           <Route exact path="/profile" component={Profile} />
         </Switch>
-      </Fragment>
+      </div>
     </Router>
   );
 };

@@ -6,11 +6,9 @@ import PostCard from './PostCard';
 const PopularCategories = ({ data }) =>
   data.map(category => (
     <Fragment>
-      <div className="pr-2 py-2 border-bottom mb-4">
+      <div className="pr-2 py-2 border-bottom border-gray-400 mb-4">
         <span className="h5 font-weight-bold">{category.categoryName}</span>
-        <a
-          className="float-right text-decoration-none text-secondary"
-          href="#!">
+        <a className="float-right text-decoration-none text-gray-600" href="#!">
           More
           <FontAwesomeIcon
             className="align-middle ml-2"

@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import ProfileTop from './ProfileTop';
+import ProfilePost from './ProfilePost';
+import { Container } from 'react-bootstrap';
 
 const Profile = () => {
   return (
+<<<<<<< HEAD
     <div className="container">
       <div className="flex flex-column align-items-center justify-content-center d-flex border border-primary mt-4 p-4 rounded-lg">
         <div className="d-flex align-items-center">
@@ -29,6 +33,13 @@ const Profile = () => {
         </div>
         <div>cccccccccccc</div>
       </div>
+=======
+    <div className="flex d-flex flex-column align-items-center justify-content-center profile">
+      <ProfileTop />
+      <ProfilePost />
+      <ProfilePost />
+      <ProfilePost />
+>>>>>>> 44e1f355c43bcae8897d844b061a6e0e140c6372
     </div>
   );
 };

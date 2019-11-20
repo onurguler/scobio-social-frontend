@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react';
 import Carousel from 'react-multi-carousel';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import 'react-multi-carousel/lib/styles.css';
 import TrendItem from './TrendItem';
 
@@ -24,9 +26,8 @@ const Trending = () => {
 
   return (
     <Fragment>
-      <p className="font-weight-bold" style={{ fontSize: '14px' }}>
-        Trending on Scobio today
-      </p>
+      <p className="font-bold text-sm">Trending on Scobio today</p>
+
       <Carousel
         /*
           swipeable={false}
