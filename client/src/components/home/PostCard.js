@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 
 const PostCard = ({ data }) => {
   return (
-    <div class="card mb-3 home-post-card mb-4">
+    <div class="card mb-3 home-post-card mb-4 overflow-hidden">
       <div class="row no-gutters">
         <div class="col-md-4">
           <img
             src={data.image}
-            class="card-img fit-image h-full"
-            width="175"
-            height="175"
+            class="card-img fit-image h-full rounded-0"
+            width="200"
+            height="200"
             alt="..."
           />
         </div>
@@ -22,7 +22,9 @@ const PostCard = ({ data }) => {
             </p>
             <div class="card-text">
               <div>
-                <Link className="text-decoration-none text-dark" to="/profile">
+                <Link
+                  className="text-decoration-none text-dark font-weight-bold"
+                  to="/profile">
                   {data.author}
                 </Link>
               </div>
