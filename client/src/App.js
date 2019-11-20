@@ -9,7 +9,7 @@ import Navbar from './components/layout/Navbar';
 const App = () => {
   return (
     <Router>
-      <Fragment>
+      <div className="font-raleway">
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
@@ -17,7 +17,7 @@ const App = () => {
           <Route exact path="/register" component={Signup} />
           <Route exact path="/profile" component={Profile} />
         </Switch>
-      </Fragment>
+      </div>
     </Router>
   );
 };
