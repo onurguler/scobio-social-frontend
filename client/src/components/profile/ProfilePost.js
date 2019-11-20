@@ -18,7 +18,7 @@ const ProfilePost = () => {
   const [showLikesModal, setShowLikesModal] = useState(false);
 
   return (
-    <div className="mt-4 border rounded-lg px-4 py-2">
+    <div className="mt-4 border rounded-lg px-4 py-2 bg-white">
       <div className="d-flex align-items-center justify-content-between">
         <div className="d-flex">
           <img
@@ -49,16 +49,16 @@ const ProfilePost = () => {
           <div
             class="dropdown-menu dropdown-menu-right"
             aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">
+            <a class="dropdown-item" href="#!">
               Bookmark post
             </a>
-            <a class="dropdown-item" href="#">
+            <a class="dropdown-item" href="#!">
               Hide post
             </a>
-            <a class="dropdown-item" href="#">
+            <a class="dropdown-item" href="#!">
               Stop following
             </a>
-            <a class="dropdown-item" href="#">
+            <a class="dropdown-item" href="#!">
               Report
             </a>
           </div>

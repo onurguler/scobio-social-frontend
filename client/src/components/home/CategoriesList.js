@@ -3,7 +3,7 @@ import React, { Fragment } from 'react';
 const CategoriesList = () => {
   return (
     <Fragment>
-      <div className="border-bottom py-2">
+      <div className="border-bottom border-gray-400 py-2">
         <span className="h5 font-weight-bold">Categories</span>
       </div>
       <div>

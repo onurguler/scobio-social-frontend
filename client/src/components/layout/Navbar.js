@@ -19,7 +19,7 @@ import { Link } from 'react-router-dom';
 
 const NavBar = ({ isAuthenticated }) => {
   return (
-    <Navbar className="border-bottom" bg="white">
+    <Navbar className="border-bottom border-gray-400" bg="white">
       <Container fluid={false}>
         <FontAwesomeIcon className="mr-2" icon={faSellcast} size={'2x'} />
 

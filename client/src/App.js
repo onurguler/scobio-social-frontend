@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './components/home/Home';
 import Login from './components/auth/Login';
@@ -9,7 +9,7 @@ import Navbar from './components/layout/Navbar';
 const App = () => {
   return (
     <Router>
-      <div className="font-raleway">
+      <div className="font-raleway bg-gray-100">
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
