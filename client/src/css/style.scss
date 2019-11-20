@@ -2,17 +2,12 @@
 //$body-bg: #000;
 
 // Import Bootstrap and its default variables
-@import "node_modules/bootstrap/scss/functions";
-@import "node_modules/bootstrap/scss/variables";
-@import "node_modules/bootstrap/scss/mixins";
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins';
 
-$theme-colors: (
-  'custom-color': #900,
-  'gray-100': #f7fafc,
-  'gray-300': #e2e8f0,
-  'gray-400': #cbd5e0,
-  'gray-500': #a0aec0
-);
+// Custom utilities scss
+@import './utilities';
 
 @import '../../node_modules/bootstrap/scss/bootstrap';
 
@@ -23,37 +18,6 @@ $theme-colors: (
 // }
 
 // utilities
-.font-catamaran {
-  font-family: 'Catamaran', sans-serif;
-}
-
-.font-mavenpro {
-  font-family: 'Maven Pro', sans-serif;
-}
-
-.font-montserrat {
-  font-family: 'Montserrat', sans-serif;
-}
-
-.font-oxygen {
-  font-family: 'Oxygen', sans-serif;
-}
-
-.font-poppins {
-  font-family: 'Poppins', sans-serif;
-}
-
-.font-quicksand {
-  font-family: 'Quicksand', sans-serif;
-}
-
-.font-raleway {
-  font-family: 'Raleway', sans-serif;
-}
-
-.font-worksans {
-  font-family: 'Work Sans', sans-serif;
-}
 
 // Navbar styling
 .navbar {
@@ -167,5 +131,81 @@ $theme-colors: (
   .modal-body {
     max-height: calc(100vh - 400px);
     overflow-y: auto;
+  }
+}
+
+.profile-top {
+  background: url('../assets/img/profile-top-background.jpg') !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  border-bottom: 1px solid #ccc;
+  img {
+    width: 96px;
+    width: 96px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    padding-left: 4px;
+    font-size: 1rem;
+  }
+
+  @include media-breakpoint-up(sm) {
+    font-size: 1rem;
+  }
+  @include media-breakpoint-up(md) {
+    img {
+      width: 128px;
+      height: 128px;
+    }
+    font-size: 1rem;
+  }
+  @include media-breakpoint-up(lg) {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+}
+
+.profile-post {
+  @include media-breakpoint-down(xs) {
+    border-radius: 0 !important;
+  }
+}
+
+.profile {
+  @include media-breakpoint-up(sm) {
+    .profile-post {
+      width: 70%;
+    }
+  }
+  @include media-breakpoint-up(md) {
+    .profile-post {
+      width: 60%;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .profile-top {
+      margin-top: 0 !important;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .profile-post {
+      width: 50%;
+    }
+
+    .profile-top {
+      width: 70%;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .profile-post {
+      width: 40%;
+    }
+
+    .profile-top {
+      width: 60%;
+    }
   }
 }

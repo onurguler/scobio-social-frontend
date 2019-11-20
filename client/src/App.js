@@ -9,7 +9,7 @@ import Navbar from './components/layout/Navbar';
 const App = () => {
   return (
     <Router>
-      <div className="font-raleway bg-gray-100">
+      <div className="font-sans antialiased bg-gray-100 text-gray-900">
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />

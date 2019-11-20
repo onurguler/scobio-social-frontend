@@ -18,7 +18,7 @@ const ProfilePost = () => {
   const [showLikesModal, setShowLikesModal] = useState(false);
 
   return (
-    <div className="mt-4 border rounded-lg px-4 py-2 bg-white">
+    <div className="mb-4 border rounded-lg px-4 py-2 bg-white profile-post shadow-sm">
       <div className="d-flex align-items-center justify-content-between">
         <div className="d-flex">
           <img
@@ -71,7 +71,7 @@ const ProfilePost = () => {
         style={{ width: '100%', height: '200px' }}
       />
 
-      <p className="lead font-weight-bold truncate-2-lines mt-2">
+      <p className="h5 font-weight-bold truncate-2-lines mt-2">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, amet!
       </p>
       <small className="truncate-3-lines">

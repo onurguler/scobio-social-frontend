@@ -5,7 +5,7 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 const SearchInput = () => {
   return (
-    <InputGroup className="input-group-sm mr-auto col-7 col-sm-9 col-md-5 col-lg-5">
+    <InputGroup className="input-group-sm mr-auto col-5 col-sm-9 col-md-5 col-lg-5">
       <FormControl
         placeholder="Search"
         aria-label="Search"

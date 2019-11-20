@@ -4,22 +4,20 @@ const ProfileTop = () => {
   return (
     <Fragment>
       <div
-        className="flex flex-column d-flex align-items-center justify-content-center border p-4 rounded-lg mt-4 mw-100"
+        className="flex flex-column d-flex align-items-center justify-content-center p-4 shadow  mw-100 profile-top mt-4 mb-4"
         style={{ background: '#e2e8f0' }}>
         <div className="d-flex align-items-center border-bottom border-secondary pb-3 mb-3">
           <div className="row">
-            <div className="col-md-4 d-flex align-items-center justify-content-center mb-4 mb-md-0">
+            <div className="col-sm-4 d-flex align-items-center justify-content-center mb-4 mb-md-0">
               <img
                 className="rounded-circle fit-image mr-md-4"
-                width="127"
-                height="127"
                 src="https://scontent-otp1-1.xx.fbcdn.net/v/t1.0-9/p960x960/65123467_10219910636463233_5371741452810321920_o.jpg?_nc_cat=102&_nc_oc=AQllQE9F2oHnz03qbVXp8zJ2yRunR6djtQEc5PDdaZqjBgLbED-_WZqdI-tfvCMpPc4&_nc_ht=scontent-otp1-1.xx&oh=360ed3d04eab2e7462dd54d33479b6e0&oe=5E5343CC"
                 alt=""
               />
             </div>
-            <div className="col-md-8">
+            <div className="col-sm-8">
               <div className="ml-4">
-                <div className="d-flex justify-content-between mb-3 align-items-center">
+                <div className="d-flex justify-content-between mb-3 align-items-center px-4">
                   <span className="lead font-weight-bold text-center align-middle">
                     Ege Çakmak
                   </span>
@@ -30,7 +28,7 @@ const ProfileTop = () => {
                     Follow
                   </button>
                 </div>
-                <div className="d-flex flex-row text-center font-montserrat">
+                <div className="d-flex flex-row text-center font-montserrat justify-content-center">
                   <div className="px-4 py-2 border-right border-secondary">
                     <div>14</div>
                     <small>Posts</small>

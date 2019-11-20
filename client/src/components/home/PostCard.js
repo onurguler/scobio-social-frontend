@@ -17,18 +17,20 @@ const PostCard = ({ data }) => {
         <div class="col-10  col-md-8">
           <div class="card-body">
             <h5 class="card-title truncate-2-lines">{data.title}</h5>
-            <p class="card-text font-smaller truncate-2-lines">
+            <p class="card-text font-smaller truncate-2-lines text-gray-700">
               {data.subtitle}
             </p>
             <div class="card-text">
               <div>
                 <Link
-                  className="text-decoration-none text-dark font-weight-bold"
+                  className="text-decoration-none text-gray-900 text-sm"
                   to="/profile">
                   {data.author}
                 </Link>
               </div>
-              <small class="text-muted">Last updated {data.date}</small>
+              <small class="text-xs text-gray-700">
+                Last updated {data.date}
+              </small>
             </div>
           </div>
         </div>

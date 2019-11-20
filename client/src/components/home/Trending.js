@@ -26,18 +26,8 @@ const Trending = () => {
 
   return (
     <Fragment>
-      <div className="pr-2 py-2 border-bottom border-gray-400 mb-4">
-        <span className="h5 font-weight-bold">Trending on Scobio today</span>
-        <a
-          className="float-right text-decoration-none text-secondary"
-          href="#!">
-          More
-          <FontAwesomeIcon
-            className="align-middle ml-2"
-            icon={faChevronRight}
-          />
-        </a>
-      </div>
+      <p className="font-bold text-sm">Trending on Scobio today</p>
+
       <Carousel
         /*
           swipeable={false}
