@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
 import Trending from './Trending';
-import PopularCategories from './PopularCategories';
+import PopularTopics from './PopularTopics';
 import CategoriesList from './CategoriesList';
 
 // static data
@@ -16,7 +16,7 @@ const Home = () => {
 
         <Row className="mt-3">
           <Col lg={8}>
-            <PopularCategories data={popularCategories} />
+            <PopularTopics data={popularCategories} />
           </Col>
           <Col lg={4} className="p pl-5">
             <CategoriesList />

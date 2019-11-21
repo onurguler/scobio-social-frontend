@@ -174,12 +174,12 @@
 .profile {
   @include media-breakpoint-up(sm) {
     .profile-post {
-      width: 70%;
+      width: 75%;
     }
   }
   @include media-breakpoint-up(md) {
     .profile-post {
-      width: 60%;
+      width: 65%;
     }
   }
 
@@ -191,7 +191,7 @@
 
   @include media-breakpoint-up(lg) {
     .profile-post {
-      width: 50%;
+      width: 55%;
     }
 
     .profile-top {
@@ -201,7 +201,7 @@
 
   @include media-breakpoint-up(xl) {
     .profile-post {
-      width: 40%;
+      width: 45%;
     }
 
     .profile-top {

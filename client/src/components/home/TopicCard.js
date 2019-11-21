@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const PostCard = ({ data }) => {
+const TopicCard = ({ data }) => {
   return (
     <div class="card mb-3 home-post-card mb-4 overflow-hidden">
       <div class="row no-gutters">
@@ -39,4 +39,4 @@ const PostCard = ({ data }) => {
   );
 };
 
-export default PostCard;
+export default TopicCard;
