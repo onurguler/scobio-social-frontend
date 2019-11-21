@@ -1,4 +1,7 @@
 import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEdit } from '@fortawesome/free-regular-svg-icons';
 
 const ProfileTop = () => {
   return (
@@ -20,6 +23,9 @@ const ProfileTop = () => {
                 <div className="d-flex justify-content-between mb-3 align-items-center px-4">
                   <span className="lead font-weight-bold text-center align-middle">
                     Ege Çakmak
+                    <Link className="text-gray-600" to="/profile/edit/overview">
+                      <FontAwesomeIcon className="ml-2" icon={faEdit} />
+                    </Link>
                   </span>
 
                   <button
