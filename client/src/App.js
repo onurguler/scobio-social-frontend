@@ -7,6 +7,7 @@ import Profile from './components/profile/Profile';
 import Navbar from './components/layout/Navbar';
 import Topic from './components/topic/Topic';
 import ProfileEdit from './components/profile/edit/ProfileEdit';
+import NewPost from './components/post/NewPost';
 
 const App = () => {
   return (
@@ -18,9 +19,10 @@ const App = () => {
           <Route exact path="/login" component={Login} />
           <Route exact path="/register" component={Signup} />
           <Route exact path="/profile" component={Profile} />
-          <Route exact path="/topic" component={Topic} />
+          <Route exact path="/topic/:topic_name" component={Topic} />
           <Route exact path="/profile/edit" component={ProfileEdit} />
           <Route exact path="/profile/edit/:option" component={ProfileEdit} />
+          <Route exact path="/posts/new" component={NewPost} />
         </Switch>
       </div>
     </Router>

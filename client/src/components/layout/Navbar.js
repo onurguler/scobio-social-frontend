@@ -21,11 +21,17 @@ const NavBar = ({ isAuthenticated }) => {
   return (
     <Navbar className="border-bottom border-gray-400" bg="white">
       <Container fluid={false}>
-        <FontAwesomeIcon className="mr-2" icon={faSellcast} size={'2x'} />
+        <Link to="/" className="text-decoration-none text-gray-900">
+          <FontAwesomeIcon
+            className="mr-2 align-middle"
+            icon={faSellcast}
+            size={'2x'}
+          />
 
-        <Navbar.Brand className="font-weight-bold" href="#home">
-          Scobio
-        </Navbar.Brand>
+          <Navbar.Brand className="font-weight-bold align-middle" href="#home">
+            Scobio
+          </Navbar.Brand>
+        </Link>
 
         <SearchInput />
 

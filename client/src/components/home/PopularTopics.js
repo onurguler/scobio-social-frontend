@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import TopicCard from './TopicCard';
+import TopicCard from '../topic/TopicCard';
 
 const PopularTopics = ({ data }) =>
   data.map(category => (
@@ -11,7 +11,7 @@ const PopularTopics = ({ data }) =>
         <span className="h5 font-weight-bold">{category.categoryName}</span>
         <Link
           className="float-right text-decoration-none text-gray-600"
-          to="/topic">
+          to={`/topic/${category.categoryName.toLowerCase()}`}>
           More
           <FontAwesomeIcon
             className="align-middle ml-2"
