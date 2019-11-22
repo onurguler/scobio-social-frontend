@@ -203,9 +203,6 @@
   }
 }
 
-.colorpleaceholder::placeholder {
-  color: #718096;
-}
-.colorpleaceholder:focus {
-  outline: none !important;
+.hover-red:hover {
+  color: #c53030 !important;
 }
