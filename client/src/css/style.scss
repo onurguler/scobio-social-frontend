@@ -206,3 +206,10 @@
     }
   }
 }
+
+.colorpleaceholder::placeholder {
+  color: #718096;
+}
+.colorpleaceholder:focus {
+  outline: none !important;
+}

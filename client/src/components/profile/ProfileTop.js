@@ -6,9 +6,7 @@ import { faEdit } from '@fortawesome/free-regular-svg-icons';
 const ProfileTop = () => {
   return (
     <Fragment>
-      <div
-        className="flex flex-column d-flex align-items-center justify-content-center p-4 shadow  mw-100 profile-top mt-4 mb-4"
-        style={{ background: '#e2e8f0' }}>
+      <div className="flex flex-column d-flex align-items-center justify-content-center p-4 shadow  mw-100 profile-top mt-4 mb-4 bg-teal-700">
         <div className="d-flex align-items-center border-bottom border-secondary pb-3 mb-3">
           <div className="row">
             <div className="col-sm-4 d-flex align-items-center justify-content-center mb-4 mb-md-0">
