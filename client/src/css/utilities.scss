@@ -7,7 +7,8 @@ $theme-colors: (
   'gray-500': #a0aec0,
   'gray-600': #718096,
   'gray-700': #4a5568,
-  'gray-900': #1a202c
+  'gray-900': #1a202c,
+  'teal-700': #2c7a7b
 );
 
 .antialiased {
@@ -129,4 +130,29 @@ $theme-colors: (
 
 .text-6xl {
   font-size: 4rem !important;
+}
+
+// Line Height
+.leading-none {
+  line-height: 1;
+}
+
+.leading-tight {
+  line-height: 1.25;
+}
+
+.leading-snug {
+  line-height: 1.375;
+}
+
+.leading-normal {
+  line-height: 1.5;
+}
+
+.leading-relaxed {
+  line-height: 1.625;
+}
+
+.leading-loose {
+  line-height: 2;
 }

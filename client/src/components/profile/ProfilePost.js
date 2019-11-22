@@ -18,7 +18,7 @@ const ProfilePost = () => {
   const [showLikesModal, setShowLikesModal] = useState(false);
 
   return (
-    <div className="mb-4 border rounded-lg px-4 py-2 bg-white profile-post shadow-sm">
+    <div className="mb-4 border rounded-lg px-4 py-4 bg-white profile-post shadow-sm">
       <div className="d-flex align-items-center justify-content-between">
         <div className="d-flex">
           <img
@@ -71,19 +71,25 @@ const ProfilePost = () => {
         style={{ width: '100%', height: '200px' }}
       />
 
-      <p className="h5 font-weight-bold truncate-2-lines mt-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, amet!
+      <p className="text-2xl font-bold leading-tight truncate-2-lines mt-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora neque
+        dignissimos odit laboriosam error natus unde, nam architecto vitae
+        totam.
       </p>
-      <small className="truncate-3-lines">
+      <p className="text-gray-600 truncate-2-lines">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
         aperiam eius voluptatem minima atque ratione rem. Aliquid ipsa tempore
         aspernatur quia totam sequi nesciunt, amet vitae, qui nam eaque soluta
         autem aliquam architecto iusto, quos assumenda porro? Ex officiis, totam
         doloremque suscipit neque, fugiat optio doloribus, sint aliquam delectus
         id.
-      </small>
+      </p>
 
-      <div className="d-flex mt-4 border-top py-2 justify-content-between">
+      <a href="#!" className="text-decoration-none text-gray-600 text-sm">
+        <p>Read more...</p>
+      </a>
+
+      <div className="d-flex justify-content-between">
         <div>
           <a className="text-decoration-none text-secondary" href="#!">
             <FontAwesomeIcon icon={faThumbsUp} />
