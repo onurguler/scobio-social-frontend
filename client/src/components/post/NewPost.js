@@ -60,7 +60,7 @@ const NewPost = () => {
               />
 
               <label class="custom-file-label" for="inputGroupFile01">
-                {cover == '' ? 'Choose Image' : cover}
+                {cover === '' ? 'Choose Image' : cover}
               </label>
             </div>
           </div>

@@ -1,19 +1,89 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 
 const EmailSettings = () => {
+  const defaultEmail = 'egeckmk@gmail.com';
+  const [editEmail, setEditEmail] = useState(false);
+  const [email, setEmail] = useState(defaultEmail);
   return (
     <Fragment>
-      <h1 className="border-bottom pb-3">EmailSettings</h1>
-      <div className="font-bold text-lg mt-4">Your email</div>
-      <div className="text-gray-800 border-bottom pb-4 mt-2">
-        egeckmk@gmail.com
+      <div className="border-bottom pb-3 text-2xl font-bold">
+        Email Settings
       </div>
-      <div className="font-bold text-lg mt-4">Emails from Scobers</div>
-      <div className="text-gray-800 mt-2">
-        Receive notifications when people you follow share a new post.
+      <div className="d-flex flex align-items-center justify-content-between flex-wrap border-bottom pb-4 mt-4">
+        <div>
+          <div className="font-bold text-lg">Your email</div>
+          {editEmail ? (
+            <input
+              value={email}
+              onChange={e => setEmail(e.target.value)}
+              type="email"
+              className="form-control non-style-input"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Enter email"
+              autoFocus={true}
+            />
+          ) : (
+            <div className="text-gray-800 mt-2">egeckmk@gmail.com</div>
+          )}
+        </div>
+        {editEmail ? (
+          <div className="d-flex my-2 sm:my-0">
+            <button className="btn btn-outline-green-500 text-sm mr-2">
+              Save
+            </button>
+            <button
+              onClick={() => {
+                setEditEmail(!editEmail);
+                setEmail(defaultEmail);
+              }}
+              className="btn border-gray-400 text-gray-600 btn-outline-gray-500 text-sm">
+              Cancel
+            </button>
+          </div>
+        ) : (
+          <button
+            onClick={() => setEditEmail(!editEmail)}
+            className="btn border-gray-400 text-gray-600 btn-outline-gray-500 text-sm">
+            Edit email
+          </button>
+        )}
       </div>
-      <div className="font-bold text-lg mt-4">Followed Scobers</div>
+      <div className="flex d-flex justify-content-between align-items-start mt-4">
+        <div>
+          <div className="font-bold text-lg">Emails from Scobers</div>
+          <div className="text-gray-800 mt-2">
+            Receive notifications when people you follow share a new post.
+          </div>
+        </div>
 
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-green-500 px-3">
+              <input
+                type="radio"
+                name="options"
+                id="option1"
+                autocomplete="off"
+                checked={true}
+                onClick
+              />
+              On
+            </label>
+            <label class="btn border-gray-400 text-gray-600 btn-outline-gray-500 px-3">
+              <input
+                type="radio"
+                name="options"
+                id="option2"
+                autocomplete="off"
+              />
+              Off
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div className="font-bold text-lg mt-4">Followed Scobers</div>
       <div className="text-gray-800 border-bottom pb-4 mt-2">
         Control which emails are sent to you from scobers you follow.
       </div>
