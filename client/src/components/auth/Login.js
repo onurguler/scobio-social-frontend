@@ -1,14 +1,17 @@
 import React, { Fragment, useState } from 'react';
+import { Redirect } from 'react-router-dom';
 import { Row, Col, Image, Form, Button, FormGroup } from 'react-bootstrap';
 import { faFacebook, faGooglePlus } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import login_img from '../../assets/img/login.jpg';
+import TwoFA from './TwoFA';
 
 const Login = () => {
   const [formData, setFormData] = useState({
     email: '',
     password: ''
   });
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   const { email, password } = formData;
 
@@ -19,7 +22,11 @@ const Login = () => {
     e.preventDefault();
 
     console.log(email, password);
+
+    setIsAuthenticated(true);
   };
+
+  if (isAuthenticated) return <Redirect to="/2FA" />;
 
   return (
     <Fragment>

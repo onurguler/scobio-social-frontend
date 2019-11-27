@@ -9,6 +9,7 @@ import Navbar from './components/layout/Navbar';
 import Topic from './components/topic/Topic';
 import ProfileEdit from './components/profile/edit/ProfileEdit';
 import NewPost from './components/post/NewPost';
+import TwoFA from './components/auth/TwoFA';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/login" component={Login} />
+          <Route exact path="/2FA" component={TwoFA} />
           <Route exact path="/register" component={Signup} />
           <Route exact path="/profile" component={Profile} />
           <Route exact path="/topic" component={Topic} />
