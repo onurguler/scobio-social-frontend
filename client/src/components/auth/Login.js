@@ -4,7 +4,6 @@ import { Row, Col, Image, Form, Button, FormGroup } from 'react-bootstrap';
 import { faFacebook, faGooglePlus } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import login_img from '../../assets/img/login.jpg';
-import TwoFA from './TwoFA';
 
 const Login = () => {
   const [formData, setFormData] = useState({

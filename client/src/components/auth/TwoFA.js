@@ -11,6 +11,7 @@ const TwoFA = () => {
             height="230"
             //className="img-fluid vh-100 d-none d-lg-block fit-image"
             src={tfa_icon}
+            alt="tfa"
           />
           <div className="col-5">
             <p className="d-flex text-center">
