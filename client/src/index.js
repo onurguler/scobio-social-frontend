@@ -10,6 +10,6 @@ import $ from 'jquery';
 // eslint-disable-next-line
 import Popper from 'popper.js';
 // Custom CSS
-import './css/style.scss';
+import './css/bulid/stye.min.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));
