@@ -31,7 +31,7 @@ const Login = () => {
           />
         </Col>
 
-        <Col lg={8} className="justify-content-center vertical-center">
+        <Col className="justify-content-center mx-auto vertical-center p-5">
           <Form className="login-form text-center" onSubmit={e => onSubmit(e)}>
             <h3 className="mb-5">Login to continue</h3>
 

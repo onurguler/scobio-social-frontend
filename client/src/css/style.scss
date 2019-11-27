@@ -25,11 +25,11 @@
 
   .input-group {
     .form-control:focus {
-      border-color: $secondary;
+      border-color: $gray-600;
       box-shadow: none;
 
       & + .input-group-append {
-        background: $secondary;
+        background: $gray-600;
 
         .btn {
           color: #fff;
@@ -66,7 +66,8 @@
 }
 
 .login-form {
-  width: 40%;
+  width: 100%;
+  max-width: 60%;
   .form-control,
   .btn {
     height: 50px;
@@ -135,7 +136,6 @@
 }
 
 .profile-top {
-  border-bottom: 1px solid #ccc;
   img {
     width: 96px;
     width: 96px;
@@ -155,10 +155,6 @@
       height: 128px;
     }
     font-size: 1rem;
-  }
-  @include media-breakpoint-up(lg) {
-    border: 1px solid #ddd;
-    border-radius: 8px;
   }
 }
 
@@ -204,5 +200,25 @@
     .profile-top {
       width: 60%;
     }
+  }
+}
+
+.hover-red:hover {
+  color: #c53030 !important;
+}
+
+.non-style-input {
+  border: 0;
+  &.form-control {
+    margin: 0;
+    padding: 0;
+    color: #1a202c;
+    max-width: 300px;
+    width: 300px;
+  }
+  &.form-control:focus {
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
   }
 }

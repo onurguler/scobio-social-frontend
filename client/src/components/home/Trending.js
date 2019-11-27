@@ -1,7 +1,5 @@
 import React, { Fragment } from 'react';
 import Carousel from 'react-multi-carousel';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import 'react-multi-carousel/lib/styles.css';
 import TrendItem from './TrendItem';
 

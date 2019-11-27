@@ -1,83 +1,36 @@
-import React from 'react';
-import {
-  Navbar,
-  Container,
-  Button,
-  ButtonToolbar,
-  Dropdown
-} from 'react-bootstrap';
+import React, { Fragment } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSellcast } from '@fortawesome/free-brands-svg-icons';
-import {
-  faUser,
-  faExternalLinkAlt,
-  faSignInAlt
-} from '@fortawesome/free-solid-svg-icons';
-import { faQuestionCircle } from '@fortawesome/free-regular-svg-icons';
-import SearchInput from './SearchInput';
+import SearchDesktop from './SearchDesktop';
 import { Link } from 'react-router-dom';
+import SearchMobile from './SearchMobile';
+import GuestItems from './GuestItems';
 
-const NavBar = ({ isAuthenticated }) => {
+const NavBar = () => {
   return (
-    <Navbar className="border-bottom border-gray-400" bg="white">
-      <Container fluid={false}>
-        <FontAwesomeIcon className="mr-2" icon={faSellcast} size={'2x'} />
-
-        <Navbar.Brand className="font-weight-bold" href="#home">
-          Scobio
-        </Navbar.Brand>
-
-        <SearchInput />
-
-        <ButtonToolbar className="auth-buttons d-none d-md-block">
-          <Link to="/login">
-            <Button className="mr-3" variant="outline-primary" size="sm">
-              LOG IN
-            </Button>
+    <Fragment>
+      <div className="navbar navbar-light bg-light border-bottom border-gray-400">
+        <div className="container">
+          <Link
+            to="/"
+            className="navbar-brand text-decoration-none text-gray-900">
+            <FontAwesomeIcon
+              className="mr-2 align-middle"
+              icon={faSellcast}
+              size={'2x'}
+            />
+            <span className="font-semibold align-middle" href="#home">
+              Scobio
+            </span>
           </Link>
-
-          <Link to="/register">
-            <Button className="mr-3" variant="primary" size="sm">
-              SIGN UP
-            </Button>
-          </Link>
-        </ButtonToolbar>
-
-        <Dropdown>
-          <Dropdown.Toggle
-            className="text-secondary"
-            size="sm"
-            variant="default"
-            id="dropdown-basic">
-            <FontAwesomeIcon icon={faUser} />
-          </Dropdown.Toggle>
-
-          <Dropdown.Menu className="font-weight-bolder dropdown-menu-right">
-            <Dropdown.Item href="#/action-3">
-              <FontAwesomeIcon
-                className="align-middle mr-2 icon-left"
-                icon={faQuestionCircle}
-              />
-              Help Center
-              <FontAwesomeIcon
-                className="align-middle ml-1 icon-right"
-                icon={faExternalLinkAlt}
-              />
-            </Dropdown.Item>
-
-            <Dropdown.Divider />
-
-            <Dropdown.Item href="#/action-4">
-              <FontAwesomeIcon
-                className="align-middle mr-2 icon-left"
-                icon={faSignInAlt}
-              />
-              Log In / Sign Up
-            </Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
-      </Container>
-    </Navbar>
+          <SearchDesktop className="d-none d-md-flex mr-auto col-5 col-sm-9 col-md-5 col-lg-5" />
+          <div className="d-flex">
+            <SearchMobile className="d-md-none" />
+            <GuestItems />
+          </div>
+        </div>
+      </div>
+    </Fragment>
   );
 };
 
