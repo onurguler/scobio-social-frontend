@@ -108,7 +108,7 @@ const PostContent = ({ className }) => {
             <FontAwesomeIcon className="align-middle" icon={faEye} />
           </a>
           <a className="text-decoration-none text-secondary" href="#!">
-            <small className="ml-2">200k+</small>
+            <small className="ml-2">200K+</small>
           </a>
         </div>
 
