@@ -20,7 +20,7 @@ const TwoFA = () => {
               <h4>Two Factor Authentication</h4>
             </div>
             <p className="text-center mt-3">
-              Google Authenticatior uygulamasında beliren kodu giriniz.
+              Please enter the code generated on Google Authenticatior App
             </p>
             <div className="d-flex align-items-center">
               <FontAwesomeIcon icon={faGoogle} className="mr-2" />

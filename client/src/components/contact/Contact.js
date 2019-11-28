@@ -4,7 +4,7 @@ function Contact() {
   return (
     <Fragment>
       <div className="text-center mt-4">
-        <h4>Bize Ulaşın</h4>
+        <h4>Contact Us</h4>
       </div>
       <div class="contact-us mt-4">
         <div class="container">
@@ -17,13 +17,13 @@ function Contact() {
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label for="form_name">Ad *</label>
+                          <label for="form_name">Name *</label>
                           <input
                             id="form_name"
                             type="text"
                             name="name"
                             class="form-control"
-                            placeholder="Adınızı giriniz."
+                            placeholder="Enter your firstname."
                             required="required"
                             data-error="Firstname is required."
                           />
@@ -32,13 +32,13 @@ function Contact() {
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label for="form_lastname">Soyad *</label>
+                          <label for="form_lastname">Surname *</label>
                           <input
                             id="form_lastname"
                             type="text"
                             name="surname"
                             class="form-control"
-                            placeholder="Soyadınızı giriniz."
+                            placeholder="Enter your surname."
                             required="required"
                             data-error="Lastname is required."
                           />
@@ -55,7 +55,7 @@ function Contact() {
                             type="email"
                             name="email"
                             class="form-control"
-                            placeholder="Email adresinizi giriniz."
+                            placeholder="Please enter your email."
                             required="required"
                             data-error="Valid email is required."
                           />
@@ -64,13 +64,13 @@ function Contact() {
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label for="form_phone">Telefon Numarası *</label>
+                          <label for="form_phone">Phone *</label>
                           <input
                             id="form_phone"
                             type="tel"
                             name="phone"
                             class="form-control"
-                            placeholder="Telefon numaranızı giriniz."
+                            placeholder="Please enter your phone."
                             required
                             oninvalid="setCustomValidity('Plz enter your correct phone number ')"
                             onchange="try{setCustomValidity('')}catch(e){}"
@@ -81,12 +81,12 @@ function Contact() {
                     <div class="row">
                       <div class="col-md-12">
                         <div class="form-group">
-                          <label for="form_message">Mesaj *</label>
+                          <label for="form_message">Message *</label>
                           <textarea
                             id="form_message"
                             name="message"
                             class="form-control"
-                            placeholder="Mesajınızı yazınız."
+                            placeholder="Please enter your message."
                             rows="4"
                             required="required"
                             data-error="Please,leave us a message."></textarea>
@@ -97,7 +97,7 @@ function Contact() {
                         <input
                           type="submit"
                           class="btn btn-primary"
-                          value="Gönder"
+                          value="Submit"
                         />
                       </div>
                     </div>
@@ -105,7 +105,7 @@ function Contact() {
                       <div class="col-md-12">
                         <br />
                         <small class="text-muted">
-                          <strong>*</strong> Bu alanlar boş bırakılmamalıdır.
+                          <strong>*</strong> These fields are required.
                         </small>
                       </div>
                     </div>
@@ -118,7 +118,7 @@ function Contact() {
                     <i class="fa fa-map-marker font-xl"></i>  
                   </div>
                   <div class="col-xs-9 px-2">
-                    Süleyman Demirel Cd., 32260 Merkez/Isparta
+                    Suleyman Demirel Cd., 32260 Merkez/Isparta
                   </div>
                 </div>
                 <div class="row mt-3">
