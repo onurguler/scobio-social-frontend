@@ -10,6 +10,7 @@ import Topic from './components/topic/Topic';
 import ProfileEdit from './components/profile/edit/ProfileEdit';
 import NewPost from './components/post/NewPost';
 import TwoFA from './components/auth/TwoFA';
+import Contact from './components/contact/Contact';
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
           <Route exact path="/profile/edit/:option" component={ProfileEdit} />
           <Route exact path="/posts/new" component={NewPost} />
           <Route exact path="/settings" component={Settings} />
+          <Route exact path="/contact" component={Contact} />
         </Switch>
       </div>
     </Router>
