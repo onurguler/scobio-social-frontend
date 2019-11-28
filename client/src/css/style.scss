@@ -222,3 +222,34 @@
     box-shadow: none;
   }
 }
+
+.post {
+  @include media-breakpoint-down(xs) {
+    border-radius: 0 !important;
+  }
+}
+
+.post-container {
+  @include media-breakpoint-up(sm) {
+    .post {
+      width: 80%;
+    }
+  }
+  @include media-breakpoint-up(md) {
+    .post {
+      width: 70%;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .post {
+      width: 60%;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .post {
+      width: 50%;
+    }
+  }
+}
