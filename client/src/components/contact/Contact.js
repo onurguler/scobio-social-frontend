@@ -142,7 +142,7 @@ function Contact() {
                   scrolling="no"
                   marginheight="0"
                   marginwidth="0"
-                  src="https://maps.google.com/maps?q=Suleyman%20Demirel%20University&t=&z=17&ie=UTF8&iwloc=&output=embed">
+                  src="https://maps.google.com/maps?q=s%C3%BCleyman%20demirel%20%C3%BCniversitesi&t=&z=13&ie=UTF8&iwloc=&output=embed">
                   >
                 </iframe>
               </div>
