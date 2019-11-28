@@ -28,7 +28,7 @@ const TwoFA = () => {
                 type="text"
                 class="form-control"
                 id="formGroupExampleInput"
-                placeholder="Kod"
+                placeholder="Code"
               />
             </div>
           </div>
