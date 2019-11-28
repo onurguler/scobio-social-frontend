@@ -6,7 +6,7 @@ function Contact() {
       <div className="text-center mt-4">
         <h4>Bize Ulaşın</h4>
       </div>
-      <div class="contact-us">
+      <div class="contact-us mt-4">
         <div class="container">
           <div class="contact-form">
             <div class="row">
@@ -117,11 +117,8 @@ function Contact() {
                   <div class="col-xs-3">
                     <i class="fa fa-map-marker font-xl"></i>  
                   </div>
-                  <div class="col-xs-9">
-                    <p className="text-center">
-                      {' '}
-                      Süleyman Demirel Cd., 32260 Merkez/Isparta{' '}
-                    </p>
+                  <div class="col-xs-9 px-2">
+                    Süleyman Demirel Cd., 32260 Merkez/Isparta
                   </div>
                 </div>
                 <div class="row mt-3">
