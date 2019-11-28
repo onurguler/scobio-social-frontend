@@ -1,11 +1,13 @@
 import React, { Fragment } from 'react';
 import tfa_icon from '../../assets/img/2fa_icon.png';
+import { faGoogle } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const TwoFA = () => {
   return (
     <Fragment>
-      <div className="justify-content-center">
-        <form className="justify-content-center vertical-center">
+      <div>
+        <form className="justify-content-center d-flex align-items-center mt-4">
           <img
             width="210"
             height="230"
@@ -14,15 +16,21 @@ const TwoFA = () => {
             alt="tfa"
           />
           <div className="col-5">
-            <p className="d-flex text-center">
-              Google Authentication uygulamasında beliren kodu giriniz.
+            <div className="text-center">
+              <h4>Two Factor Authentication</h4>
+            </div>
+            <p className="text-center mt-3">
+              Google Authenticatior uygulamasında beliren kodu giriniz.
             </p>
-            <input
-              type="text"
-              class="form-control"
-              id="formGroupExampleInput"
-              placeholder="Kod"
-            />
+            <div className="d-flex align-items-center">
+              <FontAwesomeIcon icon={faGoogle} className="mr-2" />
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput"
+                placeholder="Kod"
+              />
+            </div>
           </div>
         </form>
       </div>
