@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Modal } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -20,17 +21,17 @@ const GuestAccountDropdown = () => {
           <FontAwesomeIcon icon={faUser} />
         </button>
         <div className="dropdown-menu font-weight-bolder dropdown-menu-right">
-          <a className="dropdown-item" href="#!">
+          <Link className="dropdown-item" to="/contact">
             <FontAwesomeIcon
               className="align-middle mr-2 icon-left"
               icon={faQuestionCircle}
             />
-            Help Center
+            Contact Us
             <FontAwesomeIcon
               className="align-middle ml-1 icon-right"
               icon={faExternalLinkAlt}
             />
-          </a>
+          </Link>
           <div class="dropdown-divider"></div>
           <button
             className="btn btn-default-gray-600 dropdown-item"
