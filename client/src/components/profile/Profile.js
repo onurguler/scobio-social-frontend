@@ -1,18 +1,40 @@
-import React from 'react';
+import React, { Fragment, useState } from 'react';
 import ProfileTop from './ProfileTop';
 import ProfilePost from './ProfilePost';
 import ProfileNav from './ProfileNav';
 
 const Profile = () => {
+  const [showPosts, setShowPosts] = useState(true);
+  const [showScobs, setShowScobs] = useState(false);
+  const [showBookmarks, setShowBookmarks] = useState(false);
+
   return (
     <div className="flex d-flex flex-column align-items-center justify-content-center profile">
       <ProfileTop />
-      <ProfileNav />
-      <ProfilePost />
-      <ProfilePost />
-      <ProfilePost />
-      <ProfilePost />
-      <ProfilePost />
+      <ProfileNav
+        setShowPosts={setShowPosts}
+        setShowScobs={setShowScobs}
+        setShowBookmarks={setShowBookmarks}
+      />
+      {showPosts && (
+        <Fragment>
+          <ProfilePost />
+          <ProfilePost />
+          <ProfilePost />
+          <ProfilePost />
+          <ProfilePost />
+        </Fragment>
+      )}
+      {showScobs && (
+        <Fragment>
+          <div>scobs</div>
+        </Fragment>
+      )}
+      {showBookmarks && (
+        <Fragment>
+          <div>bookmarks</div>
+        </Fragment>
+      )}
     </div>
   );
 };

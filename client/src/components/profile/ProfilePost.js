@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faEllipsisH,
@@ -68,29 +69,38 @@ const ProfilePost = () => {
             </div>
           </div>
         </div>
-        <img
-          className="img-fluid mt-2 fit-image"
-          src="https://images.unsplash.com/photo-1574192773018-be32f27632d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
-          alt=""
-          style={{ width: '100%', height: '200px' }}
-        />
+        <Link to="/posts">
+          <img
+            className="img-fluid mt-2 fit-image"
+            src="https://images.unsplash.com/photo-1574192773018-be32f27632d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+            alt=""
+            style={{ width: '100%', height: '200px' }}
+          />
+        </Link>
 
-        <p className="text-2xl font-bold leading-tight truncate-2-lines mt-2">
+        <Link
+          to="/posts"
+          className="text-2xl font-bold leading-tight truncate-2-lines mt-2 text-decoration-none text-gray-900 mb-2">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id sint
           alias expedita unde ipsum quos voluptates quis sequi commodi nisi
           repellendus eius perferendis fuga exercitationem repudiandae,
           consequatur quam quasi nostrum.
-        </p>
-        <p className="text-gray-600 truncate-2-lines">
+        </Link>
+
+        <Link
+          to="/posts"
+          className="text-gray-600 truncate-2-lines text-decoration-none mb-2">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia,
           quidem quasi doloremque distinctio autem quae, deleniti voluptatem a
           dolor deserunt veritatis. Assumenda et perferendis laboriosam? Fugit
           esse aut alias dolorem.
-        </p>
+        </Link>
 
-        <a href="#!" className="text-decoration-none text-gray-600 text-sm">
+        <Link
+          to="/posts"
+          className="text-decoration-none text-gray-600 text-sm">
           Read more...
-        </a>
+        </Link>
 
         <div className="mt-2 d-flex justify-content-between">
           <div>

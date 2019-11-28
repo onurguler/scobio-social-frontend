@@ -11,6 +11,7 @@ import ProfileEdit from './components/profile/edit/ProfileEdit';
 import NewPost from './components/post/NewPost';
 import TwoFA from './components/auth/TwoFA';
 import Contact from './components/contact/Contact';
+import Post from './components/post/Post';
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
           <Route exact path="/posts/new" component={NewPost} />
           <Route exact path="/settings" component={Settings} />
           <Route exact path="/contact" component={Contact} />
+          <Route exact path="/posts" component={Post} />
         </Switch>
       </div>
     </Router>
