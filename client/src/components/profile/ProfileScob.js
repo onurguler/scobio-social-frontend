@@ -44,13 +44,16 @@ const ProfileScob = () => {
               class="dropdown-menu dropdown-menu-right"
               aria-labelledby="dropdownMenthuButton">
               <a class="dropdown-item" href="#!">
-                Bookmark post
+                Bookmark
               </a>
               <a class="dropdown-item" href="#!">
-                Hide post
+                Hide
               </a>
               <a class="dropdown-item" href="#!">
-                Stop following
+                Delete
+              </a>
+              <a class="dropdown-item" href="#!">
+                Unfollow
               </a>
               <a class="dropdown-item" href="#!">
                 Report

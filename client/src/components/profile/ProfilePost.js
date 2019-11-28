@@ -55,13 +55,13 @@ const ProfilePost = () => {
               class="dropdown-menu dropdown-menu-right"
               aria-labelledby="dropdownMenuButton">
               <a class="dropdown-item" href="#!">
-                Bookmark post
+                Bookmark
               </a>
               <a class="dropdown-item" href="#!">
-                Hide post
+                Hide
               </a>
               <a class="dropdown-item" href="#!">
-                Stop following
+                Unfollow
               </a>
               <a class="dropdown-item" href="#!">
                 Report
