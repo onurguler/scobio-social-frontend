@@ -61,6 +61,9 @@ const ProfilePost = () => {
                 Hide
               </a>
               <a class="dropdown-item" href="#!">
+                Delete
+              </a>
+              <a class="dropdown-item" href="#!">
                 Unfollow
               </a>
               <a class="dropdown-item" href="#!">
