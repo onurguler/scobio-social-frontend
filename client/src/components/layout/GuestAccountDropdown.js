@@ -43,7 +43,7 @@ const GuestAccountDropdown = () => {
           </button>
         </div>
       </div>
-      <Modal size="xl" show={modalIsOpen}>
+      <Modal size="xl" show={modalIsOpen} onHide={() => setModalIsOpen(false)}>
         <Modal.Header closeButton></Modal.Header>
         <Modal.Body style={{ padding: '0', margin: '0' }}>
           <Login />
