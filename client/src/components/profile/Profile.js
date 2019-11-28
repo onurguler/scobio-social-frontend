@@ -49,7 +49,7 @@ const Profile = () => {
               rows="3"
               placeholder="Buraya bir şeyler yazın..."></textarea>
           </div>
-          <button className="mb-4 btn btn-outline-gray-600">
+          <button className="mb-4 btn btn-outline-blue-500">
             <FontAwesomeIcon icon={faPlusSquare} className="mr-2" />
             Scob
           </button>

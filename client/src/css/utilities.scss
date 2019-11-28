@@ -29,6 +29,8 @@ $teal-700: #2c7a7b;
 $teal-800: #285e61;
 $teal-900: #234e52;
 
+$blue-500: #4299e1;
+
 // TailwindCSS colors
 $theme-colors: (
   'gray-100': $gray-100,
@@ -57,7 +59,8 @@ $theme-colors: (
   'teal-600': $teal-600,
   'teal-700': $teal-700,
   'teal-800': $teal-800,
-  'teal-900': $teal-900
+  'teal-900': $teal-900,
+  'blue-500': $blue-500
 );
 
 .antialiased {
