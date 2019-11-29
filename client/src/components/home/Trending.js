@@ -24,7 +24,7 @@ const Trending = () => {
 
   return (
     <Fragment>
-      <p className="font-bold text-sm">Trending on Scobio today</p>
+      <p className="font-bold text-sm">Trending on Scobi today</p>
 
       <Carousel
         /*

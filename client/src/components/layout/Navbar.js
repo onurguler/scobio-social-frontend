@@ -20,7 +20,7 @@ const NavBar = () => {
               size={'2x'}
             />
             <span className="font-semibold align-middle" href="#home">
-              Scobio
+              Scobi
             </span>
           </Link>
           <SearchDesktop className="d-none d-md-flex mr-auto col-5 col-sm-9 col-md-5 col-lg-5" />
