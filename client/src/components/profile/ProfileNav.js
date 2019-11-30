@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAlignJustify } from '@fortawesome/free-solid-svg-icons';
-import { faClock, faBookmark } from '@fortawesome/free-regular-svg-icons';
+import { faAlignJustify, faEdit } from '@fortawesome/free-solid-svg-icons';
+import { faBookmark } from '@fortawesome/free-regular-svg-icons';
 
 function ProfileNav({ setShowPosts, setShowScobs, setShowBookmarks }) {
   const [postsIsActive, setPostsIsActive] = useState(true);
@@ -40,7 +40,7 @@ function ProfileNav({ setShowPosts, setShowScobs, setShowBookmarks }) {
               setShowScobs(true);
               setShowBookmarks(false);
             }}>
-            <FontAwesomeIcon className="text-center" icon={faClock} />
+            <FontAwesomeIcon className="text-center" icon={faEdit} />
             <br />
             <span>Scobs</span>
           </button>
