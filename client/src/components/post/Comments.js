@@ -4,11 +4,13 @@ import PostCard from './PostCard';
 
 const Comments = () => {
   return (
-    <div className="flex d-flex flex-column align-items-center justify-content-center profile border py-2">
-      <p className="text-gray-700 text-sm font-semibold">
-        Showing comments for:
-      </p>
-      <PostCard />
+    <div className="min-vh-100">
+      <div className="flex d-flex flex-column align-items-center justify-content-center profile border py-2">
+        <p className="text-gray-700 text-sm font-semibold">
+          Showing comments for:
+        </p>
+        <PostCard />
+      </div>
     </div>
   );
 };

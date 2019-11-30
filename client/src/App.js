@@ -12,12 +12,9 @@ import NewPost from './components/post/NewPost';
 import TwoFA from './components/auth/TwoFA';
 import Contact from './components/contact/Contact';
 import Post from './components/post/Post';
-<<<<<<< HEAD
 import BottomBar from './components/layout/BottomBar';
 import AboutUs from './components/contact/AboutUs';
-=======
 import Comments from './components/post/Comments';
->>>>>>> develop
 
 const App = () => {
   return (
@@ -40,11 +37,8 @@ const App = () => {
           <Route exact path="/settings" component={Settings} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/posts" component={Post} />
-<<<<<<< HEAD
           <Route exact path="/AboutUs" component={AboutUs} />
-=======
           <Route exact path="/posts/:post_id/comments" component={Comments} />
->>>>>>> develop
         </Switch>
         <BottomBar />
       </div>
