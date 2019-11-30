@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const TwoFA = () => {
   return (
     <Fragment>
-      <div>
+      <div className="min-vh-100">
         <form className="justify-content-center d-flex align-items-center mt-4">
           <img
             width="210"

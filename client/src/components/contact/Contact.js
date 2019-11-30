@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 
 function Contact() {
   return (
-    <Fragment>
+    <div className="min-vh-100">
       <div className="text-center mt-4">
         <h4>Contact Us</h4>
       </div>
@@ -150,7 +150,7 @@ function Contact() {
           </div>
         </div>
       </div>
-    </Fragment>
+    </div>
   );
 }
 
