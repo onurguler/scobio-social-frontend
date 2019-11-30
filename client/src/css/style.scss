@@ -165,6 +165,11 @@
 }
 
 .profile {
+  @include media-breakpoint-down(sm) {
+    .profile-post {
+      width: 100%;
+    }
+  }
   @include media-breakpoint-up(sm) {
     .profile-post {
       width: 75%;
@@ -251,5 +256,43 @@
     .post {
       width: 50%;
     }
+  }
+}
+
+.profile-nav {
+  .btn:focus {
+    box-shadow: none !important;
+  }
+  .btn:hover {
+    color: #1a202c !important;
+  }
+  .active {
+    background: #718096 !important;
+    color: white !important;
+  }
+  .active:hover {
+    background: #4a5568 !important;
+    color: #fff !important;
+  }
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+  }
+  @include media-breakpoint-up(sm) {
+    width: 75%;
+  }
+  @include media-breakpoint-up(md) {
+    width: 65%;
+  }
+
+  @include media-breakpoint-down(md) {
+    margin-top: 0 !important;
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: 55%;
+  }
+
+  @include media-breakpoint-up(xl) {
+    width: 45%;
   }
 }
