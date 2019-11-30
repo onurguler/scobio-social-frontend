@@ -12,6 +12,7 @@ import NewPost from './components/post/NewPost';
 import TwoFA from './components/auth/TwoFA';
 import Contact from './components/contact/Contact';
 import Post from './components/post/Post';
+import Comments from './components/post/Comments';
 
 const App = () => {
   return (
@@ -34,6 +35,7 @@ const App = () => {
           <Route exact path="/settings" component={Settings} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/posts" component={Post} />
+          <Route exact path="/posts/:post_id/comments" component={Comments} />
         </Switch>
       </div>
     </Router>
