@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faEllipsisH,
@@ -170,9 +171,11 @@ const PostContent = ({ className }) => {
           Follow
         </button>
       </div>
-      <button className="btn btn-outline-green-500 mt-4 w-100">
-        Show Comments
-      </button>
+      <Link to="/posts/123123post_id/comments">
+        <button className="btn btn-outline-green-500 mt-4 w-100">
+          Show Comments
+        </button>
+      </Link>
       <LikesModal
         show={showLikesModal}
         onHide={() => setShowLikesModal(false)}
