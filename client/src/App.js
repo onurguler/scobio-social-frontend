@@ -13,6 +13,7 @@ import TwoFA from './components/auth/TwoFA';
 import Contact from './components/contact/Contact';
 import Post from './components/post/Post';
 import BottomBar from './components/layout/BottomBar';
+import AboutUs from './components/contact/AboutUs';
 
 const App = () => {
   return (
@@ -35,6 +36,7 @@ const App = () => {
           <Route exact path="/settings" component={Settings} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/posts" component={Post} />
+          <Route exact path="/AboutUs" component={AboutUs} />
         </Switch>
         <BottomBar />
       </div>
