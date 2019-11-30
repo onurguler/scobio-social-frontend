@@ -4,7 +4,7 @@ import { faFacebook, faGooglePlus } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import login_img from '../../assets/img/login.jpg';
+import signin from '../../assets/img/signin.jpg';
 
 const Signup = () => {
   const [formData, setFormData] = useState({
@@ -33,7 +33,7 @@ const Signup = () => {
         <Col lg={4}>
           <Image
             className="img-fluid vh-100 d-none d-lg-block fit-image"
-            src={login_img}
+            src={signin}
           />
         </Col>
 

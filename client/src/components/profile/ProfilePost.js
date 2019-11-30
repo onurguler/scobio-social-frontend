@@ -9,7 +9,8 @@ import {
   faThumbsDown as faThumbsDownSolid,
   // eslint-disable-next-line
   faBookmark as faBookmarkSolid,
-  faShare
+  faShare,
+  faEye
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faThumbsUp,
@@ -121,6 +122,12 @@ const ProfilePost = () => {
             </a>
             <a className="text-decoration-none text-secondary" href="#!">
               <small className="ml-2">13</small>
+            </a>
+            <a className="text-decoration-none text-secondary ml-4" href="#!">
+              <FontAwesomeIcon className="align-middle" icon={faEye} />
+            </a>
+            <a className="text-decoration-none text-secondary" href="#!">
+              <small className="ml-2">200K+</small>
             </a>
           </div>
 

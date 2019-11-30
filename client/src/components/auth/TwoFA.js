@@ -30,6 +30,7 @@ const TwoFA = () => {
                 id="formGroupExampleInput"
                 placeholder="Code"
               />
+              <button className="btn btn-blue-500 ml-2">Verify</button>
             </div>
           </div>
         </form>

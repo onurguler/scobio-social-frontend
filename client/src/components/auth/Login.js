@@ -3,7 +3,7 @@ import { Redirect } from 'react-router-dom';
 import { Row, Col, Image, Form, Button, FormGroup } from 'react-bootstrap';
 import { faFacebook, faGooglePlus } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import login_img from '../../assets/img/login.jpg';
+import signin from '../../assets/img/signin.jpg';
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -33,7 +33,7 @@ const Login = () => {
         <Col lg={4}>
           <Image
             className="img-fluid vh-100 d-none d-lg-block fit-image"
-            src={login_img}
+            src={signin}
           />
         </Col>
 
