@@ -12,7 +12,7 @@ import NewPost from './components/post/NewPost';
 import TwoFA from './components/auth/TwoFA';
 import Contact from './components/contact/Contact';
 import Post from './components/post/Post';
-import BottomBar from './components/layout/BottomBar';
+import Footer from './components/layout/Footer';
 import AboutUs from './components/contact/AboutUs';
 import Comments from './components/post/Comments';
 
@@ -40,7 +40,7 @@ const App = () => {
           <Route exact path="/AboutUs" component={AboutUs} />
           <Route exact path="/posts/:post_id/comments" component={Comments} />
         </Switch>
-        <BottomBar />
+        <Footer />
       </div>
     </Router>
   );
