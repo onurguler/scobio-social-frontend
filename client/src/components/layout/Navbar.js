@@ -5,8 +5,9 @@ import SearchDesktop from './SearchDesktop';
 import { Link } from 'react-router-dom';
 import SearchMobile from './SearchMobile';
 import GuestItems from './GuestItems';
+import AuthItems from './AuthItems';
 
-const NavBar = () => {
+const NavBar = ({ isAuthenticated }) => {
   return (
     <Fragment>
       <div className="navbar navbar-light bg-light border-bottom border-gray-400">
@@ -26,7 +27,7 @@ const NavBar = () => {
           <SearchDesktop className="d-none d-md-flex mr-auto col-5 col-sm-9 col-md-5 col-lg-5" />
           <div className="d-flex">
             <SearchMobile className="d-md-none" />
-            <GuestItems />
+            {isAuthenticated ? <AuthItems /> : <GuestItems />}
           </div>
         </div>
       </div>

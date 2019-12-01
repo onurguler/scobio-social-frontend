@@ -43,7 +43,7 @@ const ProfilePost = () => {
 
           <div class="dropdown">
             <button
-              class="btn btn-link text-secondary text-decoration-none dropdown"
+              className="btn btn-link text-secondary text-decoration-none dropdown"
               type="button"
               id="dropdownMenuButton"
               data-toggle="dropdown"
@@ -52,21 +52,21 @@ const ProfilePost = () => {
               <FontAwesomeIcon icon={faEllipsisH} />
             </button>
             <div
-              class="dropdown-menu dropdown-menu-right"
+              className="dropdown-menu dropdown-menu-right"
               aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#!">
+              <a className="dropdown-item" href="#!">
                 Bookmark
               </a>
-              <a class="dropdown-item" href="#!">
+              <a className="dropdown-item" href="#!">
                 Hide
               </a>
-              <a class="dropdown-item" href="#!">
+              <a className="dropdown-item" href="#!">
                 Delete
               </a>
-              <a class="dropdown-item" href="#!">
+              <a className="dropdown-item" href="#!">
                 Unfollow
               </a>
-              <a class="dropdown-item" href="#!">
+              <a className="dropdown-item" href="#!">
                 Report
               </a>
             </div>
