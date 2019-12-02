@@ -19,7 +19,7 @@ const AuthAccountDropdown = () => {
         <div
           className="dropdown-menu font-weight-bolder dropdown-menu-right"
           style={{ minWidth: '15rem' }}>
-          <Link className="dropdown-item">
+          <Link className="dropdown-item" to="/profile">
             <div className="d-flex">
               <img
                 className="rounded-circle fit-image"
@@ -42,9 +42,6 @@ const AuthAccountDropdown = () => {
           </Link>
           <Link className="dropdown-item" to="/profile">
             Posts
-          </Link>
-          <Link className="dropdown-item" to="/stats">
-            Stats
           </Link>
           <div class="dropdown-divider"></div>
           <Link className="dropdown-item" to="/profile">

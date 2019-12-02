@@ -20,7 +20,7 @@ const App = () => {
   return (
     <Router>
       <div className="font-sans antialiased text-gray-900">
-        <Navbar isAuthenticated={true} />
+        <Navbar isAuthenticated={false} />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/login" component={Login} />
