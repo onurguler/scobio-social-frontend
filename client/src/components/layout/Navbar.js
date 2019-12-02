@@ -25,7 +25,7 @@ const NavBar = ({ isAuthenticated }) => {
             </span>
           </Link>
           <SearchDesktop className="d-none d-md-flex mr-auto col-5 col-sm-9 col-md-5 col-lg-5" />
-          <div className="d-flex">
+          <div className="d-flex align-items-center">
             <SearchMobile className="d-md-none" />
             {isAuthenticated ? <AuthItems /> : <GuestItems />}
           </div>

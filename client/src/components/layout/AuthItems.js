@@ -4,7 +4,7 @@ import NotificationDropdown from './NotificationDropdown';
 
 const AuthItems = () => {
   return (
-    <div className="d-flex align-items-center">
+    <div className="d-flex">
       <NotificationDropdown />
       <AuthAccountDropdown />
     </div>
