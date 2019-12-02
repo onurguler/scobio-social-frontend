@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
+  // eslint-disable-next-line
   faThumbsUp as faThumbsUpSolid,
   // eslint-disable-next-line
   faThumbsDown as faThumbsDownSolid,

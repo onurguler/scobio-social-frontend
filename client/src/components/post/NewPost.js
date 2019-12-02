@@ -6,13 +6,6 @@ import {
   FormControl,
   Button
 } from 'react-bootstrap';
-// import MdEditor from 'react-markdown-editor-lite';
-// import MarkdownIt from 'markdown-it';
-// import CKEditor from '@ckeditor/ckeditor5-react';
-// import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
-// import { Editor } from '@tinymce/tinymce-react';
-// import ReactDrafts from 'react-drafts';
-// import 'react-drafts/dist/react-drafts.css';
 import { Editor } from 'react-draft-wysiwyg';
 import { EditorState } from 'draft-js';
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
@@ -29,7 +22,7 @@ const NewPost = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   return (
     <Fragment>
-      <Container fluid={false}>
+      <Container className="min-vh-100" fluid={false}>
         <Form className="mt-4">
           <InputGroup className="mb-3">
             <InputGroup.Prepend>

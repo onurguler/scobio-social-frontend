@@ -1,7 +1,6 @@
 import React from 'react';
 import PostHeader from './PostHeader';
 import PostUser from './PostUser';
-import Postcontent from './PostContent';
 import PostContent from './PostContent';
 
 const Post = () => {
