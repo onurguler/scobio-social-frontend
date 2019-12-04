@@ -1,13 +1,10 @@
 # How to run this project?
 
 ```
-git clone http://github.com/onurguler/scobio-social
-cd scobio-social
+git clone https://github.com/onurguler/scobio-social-frontend.git
+cd scobio-social-frontend
 npm i
-cd client
-npm i
-cd ..
-npm run client
+npm start
 ```
 
 Birlikte çalışabilmek adına yapılan her component yeni bir branch içine commitlenmeli.
@@ -49,6 +46,8 @@ git push -u origin postcomponent
 Branch birleştirme:
 git checkout homepage
 git fetch origin homepage -> biri değişiklik yapmışsa onları çekelim
+ya da
+git pull
 git merge postcomponent -> kendi değişikliklerimizle birleştirelim
 git push -u origin postcomponent
 ```
